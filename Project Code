@@ -1,7 +1,11 @@
 # import data #
-setwd("/Users/terrysitu/Dropbox/Stat MS Classes/Regression Modeling/Data")
 
-data.full <- read.csv("skulls.csv")
+# install.packages("httr")
+library(httr)
+
+data.full <-read.csv(text=GET("https://raw.githubusercontent.com/opetchey/RREEBES/master/Beninca_etal_2008_Nature/data/nutrients_original.csv"), skip=7, header=T)
+https://github.com/TerrySitu/Multivariate-Analysis-of-Egyptian-Skulls/blob/master/skulls.csv
+
 data.full <- data.full[,-1]
 
 data <- data.full[,2:5]
