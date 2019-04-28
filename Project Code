@@ -3,7 +3,7 @@
 # install.packages("httr")
 library(httr)
 
-data.full <-read.csv(text=GET("https://raw.githubusercontent.com/opetchey/RREEBES/master/Beninca_etal_2008_Nature/data/nutrients_original.csv"), skip=7, header=T)
+data.full <-read.csv(text=GET("https://raw.githubusercontent.com/TerrySitu/Multivariate-Analysis-of-Egyptian-Skulls/master/skulls.csv"), header=T)
 https://github.com/TerrySitu/Multivariate-Analysis-of-Egyptian-Skulls/blob/master/skulls.csv
 
 data.full <- data.full[,-1]
